@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-30T14:39:00.957Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="LZEW-WS4Nk9YtW6JaXOK" version="24.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-30T15:15:16.148Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="rrd7vsfn2OlIUCKa_S_s" version="24.6.4" type="github">
   <diagram name="Página-1" id="Jgd_S9k8YFbY1Mg9aaFk">
     <mxGraphModel dx="1133" dy="1030" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -163,7 +163,7 @@
         <mxCell id="LQod-wtzZr7OGSiWcYUU-64" value="SalesOrderHeaderSalesreason" style="html=1;dashed=0;whiteSpace=wrap;fontSize=15;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="450" y="1510" width="225" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="LQod-wtzZr7OGSiWcYUU-66" value="dim_custumer" style="html=1;dashed=0;whiteSpace=wrap;fontSize=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="LQod-wtzZr7OGSiWcYUU-66" value="dim_customer" style="html=1;dashed=0;whiteSpace=wrap;fontSize=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="80" y="1150" width="140" height="50" as="geometry" />
         </mxCell>
         <mxCell id="LQod-wtzZr7OGSiWcYUU-68" value="dim_territory" style="html=1;dashed=0;whiteSpace=wrap;fontSize=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
