@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_territories
+    description: Dimension Table of Persons (customers, vendors, and employees) territory.
+    columns:
+      - name: PK_ADDRESS
+        description: Primary Key - Person Address identifier          
+
+      - name: FK_BUSINESS_ENTITY
+        description: Foreign Key - Business entity identifer
+
+      - name: CITY
+        description: Person city
+      
+      - name: STATE
+        description: Person state
+      
+      - name: COUNTRY
+        description: Person country

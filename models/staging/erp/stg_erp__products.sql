@@ -1,5 +1,5 @@
 with
-    product as (
+    products as (
         select
             cast(PRODUCTID as int) as pk_product,
             cast(NAME as varchar) as nm_product,
@@ -30,4 +30,4 @@ with
     )
 
 select *
-from product
+from products

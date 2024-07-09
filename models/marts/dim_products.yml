@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: Dimension Table of Adventure Works Products.
+    columns:
+      - name: PK_PRODUCT
+        description: Primary Key - Product identifier          
+
+      - name: NM_PRODUCT
+        description: Product name

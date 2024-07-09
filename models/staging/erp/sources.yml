@@ -6,14 +6,50 @@ sources:
     schema: RAW_ADVENTURE_WORKS
     tables:
       - name: SalesOrderHeader
+        columns:
+          - name: SALESORDERID
+            tests:
+              - unique
+              - not_null
       - name: SalesOrderDetail
       - name: SalesOrderHeaderSalesreason
       - name: SalesReason
+        columns:
+          - name: SALESREASONID
+            tests:
+              - unique
+              - not_null
       - name: Product
+        columns:
+          - name: PRODUCTID
+            tests:
+              - unique
+              - not_null              
       - name: CreditCard
       - name: PersonCreditCard
       - name: Person
+        columns:
+          - name: BUSINESSENTITYID
+            tests:
+              - unique
+              - not_null
       - name: BusinessEntityAddress
       - name: Address
+        columns:
+          - name: ADDRESSID
+            tests:
+              - unique
+              - not_null
       - name: StateProvince
+        columns:
+          - name: STATEPROVINCEID
+            tests:
+              - unique
+              - not_null
       - name: CountryRegion
+        columns:
+          - name: NAME
+            tests:
+              - unique
+              - not_null
+

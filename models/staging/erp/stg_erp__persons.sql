@@ -1,9 +1,8 @@
 with
-    person as (
+    persons as (
         select
             cast(BUSINESSENTITYID as int) as pk_business_entity,
-            cast(FIRSTNAME as varchar) as person_first_name,
-            cast(LASTNAME as varchar) as person_last_name,
+            cast(FIRSTNAME as varchar) || ' ' || cast(LASTNAME as varchar) as NM_PERSON,
             --cast(PERSONTYPE as int) as fk_business_entity,
             --cast(NAMESTYLE as int) as fk_business_entity,
             --cast(TITLE as int) as fk_business_entity,
@@ -18,4 +17,4 @@ with
     )
 
 select *
-from person
+from persons
