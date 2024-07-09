@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_sales_reasons
+    description: Dimension Table of Adventure Works Sales Reason.
+    columns:
+      - name: FK_ORDER
+        description: Foreign Key - Sales order identifier          
+
+      - name: NM_SALES_REASON
+        description: Sales reason name

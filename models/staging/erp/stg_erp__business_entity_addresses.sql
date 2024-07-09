@@ -1,5 +1,5 @@
 with
-    business_entity_address as (
+    business_entity_addresses as (
         select
             cast(BUSINESSENTITYID as int) as fk_business_entity,
             cast(ADDRESSID as int) as fk_address,
@@ -10,4 +10,4 @@ with
     )
 
 select *
-from business_entity_address
+from business_entity_addresses

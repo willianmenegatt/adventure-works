@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_credit_cards
+    description: Dimension Table of Adventure registered Credit Cards.
+    columns:
+      - name: PK_CREDIT_CARD
+        description: Primary Key - Credit card identifier
+
+      - name: FK_BUSINESS_ENTITY
+        description: Foreign Key - Business entity (customers, vendors, and employees) identifier      
+
+      - name: NM_PERSON
+        description: Person first and last name
+      
+      - name: CREDIT_CARD_TYPE
+        description: Person credit card type

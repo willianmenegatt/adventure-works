@@ -1,0 +1,55 @@
+version: 2
+
+models:
+  - name: fct_sales
+    description: Fact Table of sales
+    columns:
+      - name: SK_ORDER_ITEM
+        description: Surrogate Key - Order and product identifier      
+
+      - name: FK_ORDER
+        description: Foreign Key - Order identifier
+
+      - name: STATUS_ORDER
+        description: Order status
+      
+      - name: ORDER_QUANTITY
+        description: Order quantity
+      
+      - name: PRODUCT_UNIT_PRICE
+        description: Product unit price
+
+      - name: UNIT_PRICE_DISCOUINT
+        description: Product unit price discount
+
+      - name: NM_SALES_REASON
+        description: Sales reason
+
+      - name: NM_PRODUCT
+        description: Product name
+
+      - name: NM_PERSON
+        description: Customer name
+
+      - name: CREDIT_CARD_TYPE
+        description: Customer credit card type
+
+      - name: CITY
+        description: Customer city
+
+      - name: STATE
+        description: Customer state
+
+      - name: COUNTRY
+        description: Customer country
+
+      - name: DT_ORDER
+        description: Order date
+
+      - name: GROSS_TOTAL
+        description: Product QUANTITY * UNIT PRICE
+
+      - name: NET_TOTAL
+        description: Product QUANTITY * UNIT PRICE - DICOUNT
+
+

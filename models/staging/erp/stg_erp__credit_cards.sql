@@ -1,5 +1,5 @@
 with
-    credit_card as (
+    credit_cards as (
         select
             cast(CREDITCARDID as varchar) as pk_credit_card,
             cast(CARDTYPE as varchar) as credit_card_type,
@@ -11,4 +11,4 @@ with
     )
 
 select *
-from credit_card
+from credit_cards

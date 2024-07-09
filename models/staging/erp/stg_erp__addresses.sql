@@ -1,5 +1,5 @@
 with
-    address as (
+    addresses as (
         select
             cast(ADDRESSID as int) as pk_address,
             cast(STATEPROVINCEID as int) as fk_state,
@@ -14,4 +14,4 @@ with
     )
 
 select *
-from address
+from addresses

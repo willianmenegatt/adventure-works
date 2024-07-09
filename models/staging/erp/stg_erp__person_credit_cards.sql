@@ -1,5 +1,5 @@
 with
-    person_credit_card as (
+    person_credit_cards as (
         select
             cast(BUSINESSENTITYID as int) as fk_business_entity,
             cast(CREDITCARDID as int) as fk_credit_card,
@@ -8,4 +8,4 @@ with
     )
 
 select *
-from person_credit_card
+from person_credit_cards
