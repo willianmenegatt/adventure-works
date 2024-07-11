@@ -43,17 +43,18 @@ with
         from orders_by_item
         left join dim_products on dim_products.PK_PRODUCT = orders_by_item.FK_PRODUCT
         left join dim_credit_cards on dim_credit_cards.PK_CREDIT_CARD = orders_by_item.FK_CREDIT_CARD
-        left join dim_territories on dim_territories.FK_BUSINESS_ENTITY = dim_credit_cards.FK_BUSINESS_ENTITY
         left join dim_sales_reasons on dim_sales_reasons.FK_ORDER = orders_by_item.FK_ORDER
+        --left join dim_territories on dim_territories.FK_BUSINESS_ENTITY = dim_credit_cards.FK_BUSINESS_ENTITY
     ),
 
     metrics as (
         select
             *,
-            ORDER_QUANTITY * PRODUCT_UNIT_PRICE as GROSS_TOTAL,
-            ORDER_QUANTITY * (1 - UNIT_PRICE_DISCOUNT) * PRODUCT_UNIT_PRICE as NET_TOTAL,
+            ORDER_QUANTITY * (1 - UNIT_PRICE_DISCOUNT) * PRODUCT_UNIT_PRICE as SUB_TOTAL,
+            (ORDER_QUANTITY * (1 - UNIT_PRICE_DISCOUNT) * PRODUCT_UNIT_PRICE) / ORDER_QUANTITY as TICKET,
         from joined
     )
 
 select *
 from metrics
+
