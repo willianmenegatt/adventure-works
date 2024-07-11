@@ -53,3 +53,13 @@ sources:
               - unique
               - not_null
 
+      - name: Customer
+        columns:
+          - name: CUSTOMERID
+            tests:
+              - unique
+              - not_null
+
+      - name: BusinessEntityContact
+
+

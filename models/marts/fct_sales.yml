@@ -46,10 +46,12 @@ models:
       - name: DT_ORDER
         description: Order date
 
-      - name: GROSS_TOTAL
-        description: Product QUANTITY * UNIT PRICE
-
-      - name: NET_TOTAL
+      - name: SUB_TOTAL
         description: Product QUANTITY * UNIT PRICE - DICOUNT
+
+      - name: TICKET
+        description: Product (QUANTITY * UNIT PRICE - DICOUNT) / QUANTITY
+
+      
 
 

@@ -1,12 +1,12 @@
 with
-    orders as (
-        select *
-        from {{ ref('stg_erp__orders') }}
-    ),
-
     orders_detail as (
         select *
         from {{ ref('stg_erp__orders_detail') }}
+    ),
+
+    orders as (
+        select *
+        from {{ ref('stg_erp__orders') }}
     ),
 
     joined as(
